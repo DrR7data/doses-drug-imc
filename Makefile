@@ -31,8 +31,8 @@ build:
 	docker build . -t doses-drug-imc 
 
 run:
-	docker run -it -p 127.0.0.1:8000:8000 --name doses-drug-imc doses-drug-imc sh 
-#docker run -p 127.0.0.1:8000:8000 --name doses-drug-imc doses-drug-imc
+	#docker run -it -p 127.0.0.1:8000:8000 --name doses-drug-imc doses-drug-imc sh 
+	docker run -p 127.0.0.1:8000:8000 --name doses-drug-imc doses-drug-imc
 	
 start:
 	docker start doses-drug-imc
