@@ -1,4 +1,6 @@
 [![Python 3.9 app. test with github Action](https://github.com/DrR7data/doses-drug-imc/actions/workflows/main.yml/badge.svg)](https://github.com/DrR7data/doses-drug-imc/actions/workflows/main.yml)
+# Project App for calculate dosis of drug in Pediatrics
+1. Working in the new Branch
 # doses-drug-imc
 For calculate doses of drugs and imc 
 
