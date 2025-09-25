@@ -29,18 +29,16 @@ async def calcc_dosis(peso: float, dosis: float, pres_ml: float, interval: int):
 
     if peso <= 0 or dosis <= 0 or pres_ml <= 0 or interval <= 0:
         raise HTTPException(
-            status_code=400, 
-            detail="Todos los parámetros deben ser mayores a cero"
+            status_code=400, detail="Todos los parámetros deben ser mayores a cero"
         )
-    
+
     try:
         dosis_calc = (peso * dosis / pres_ml) / interval
         return {"dosis_calculada": dosis_calc}
     except ZeroDivisionError as exc:
         # Corregido: usando 'from exc' para preservar el traceback
         raise HTTPException(
-            status_code=400, 
-            detail="Error en cálculo: división por cero"
+            status_code=400, detail="Error en cálculo: división por cero"
         ) from exc
 
 

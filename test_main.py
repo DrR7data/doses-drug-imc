@@ -21,7 +21,7 @@ def test_calcc_dosis_with_validation():
 def test_calcc_dosis_invalid_zero_params():
     # Test con parámetros cero
     response = client.get(
-       "/calcc_dosis/pesos/dosis/",
+        "/calcc_dosis/pesos/dosis/",
         params={"peso": 0, "dosis": 100, "pres_ml": 50, "interval": 2},  # Inválido
     )
 
