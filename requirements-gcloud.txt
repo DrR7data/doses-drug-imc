@@ -5,4 +5,4 @@ click
 black
 pytest-cov
 uvicorn
-ipython
+httpx 
